@@ -77,6 +77,16 @@ body {
   --blue-700: #0367a1;
   --blue-800: #075885;
   --blue-900: #0c496e;
+
+  --pink-100: #fde3e3;
+  --pink-200: #fccccc;
+  --pink-300: #f9a8a8;
+  --pink-400: #f37676;
+  --pink-500: #eb5a5a;
+  --pink-600: #d62c2c;
+  --pink-700: #b42121;
+  --pink-800: #951f1f;
+  --pink-900: #7c2020;
 }
 
 body {
@@ -103,4 +113,19 @@ body {
     @apply text-2xl;
   }
   /* ... */
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.7s ease-in-out forwards;
+  }
 }

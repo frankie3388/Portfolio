@@ -8,8 +8,8 @@ type AboutMeCardProps = {
     hoverImageSrc: string; // New prop for the hover image
     altText: string;
     text: string;
-
     className?: string;
+    onClick?: () => void;
 };
 
 const AboutMeCard: React.FC<AboutMeCardProps> = ({
@@ -17,11 +17,14 @@ const AboutMeCard: React.FC<AboutMeCardProps> = ({
     hoverImageSrc,
     altText,
     text,
-
     className = "",
+    onClick,
 }) => {
     return (
-        <section className={`group bg-grey rounded-lg sm:w-[42rem] sm:h-[22rem] w-[22rem] h-[12rem] relative flex justify-center items-center hover:cursor-pointer ${className}`}>
+        <section 
+            className={`group bg-grey rounded-lg sm:w-[42rem] sm:h-[22rem] w-[22rem] h-[12rem] relative flex justify-center items-center hover:cursor-pointer ${className}`}
+            onClick={onClick}
+        >
             <div className="relative w-5/6 h-5/6 bg-grey p-8 rounded-lg shadow-lg flex items-center justify-center">
                 <Image
                     src={imageSrc}
