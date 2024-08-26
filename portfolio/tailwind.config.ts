@@ -61,6 +61,17 @@ const config: Config = {
             700: 'var(--blue-700)',
             800: 'var(--blue-800)',
             900: 'var(--blue-900)',
+          },
+          customPink: {
+            100: 'var(--pink-100)',
+            200: 'var(--pink-200)',
+            300: 'var(--pink-300)',
+            400: 'var(--pink-400)',
+            500: 'var(--pink-500)',
+            600: 'var(--pink-600)',
+            700: 'var(--pink-700)',
+            800: 'var(--pink-800)',
+            900: 'var(--pink-900)',
           }
       },
       fontFamily: {

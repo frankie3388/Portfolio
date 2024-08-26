@@ -6,7 +6,6 @@ import Projects from "@/components/projects/Projects";
 import ContactMe from "@/components/contact/ContactMe";
 import { useEffect, useState } from "react";
 import { useOffsetY } from "@/hooks/useOffsetY";
-import PersonalLifePanel from "@/components/about-me/PersonalLifePanel"
 
 export default function Home() {
   const offsetY = useOffsetY();
@@ -34,7 +33,6 @@ export default function Home() {
         </div>
       </section>
       <AboutMe />
-      <PersonalLifePanel />  
       <Projects />
       <ContactMe />
     </main>
