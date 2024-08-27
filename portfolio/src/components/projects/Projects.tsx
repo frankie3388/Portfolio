@@ -10,21 +10,24 @@ const projectsData = [
         altText: "Travelling Diary",
         text: "Travelling Diary",
         bgHoverColor: "bg-customGreen-800",
-        headingHoverColor: "bg-customGreen-600"
+        headingHoverColor: "bg-customGreen-600",
+        link:"/TravellingDiary"
     },
     {
-        imageSrc: "/images/travelling diary logo.png",
+        imageSrc: "/images/food-pic.jpg",
         altText: "Travelling Diary",
-        text: "Travelling Diary",
+        text: "Food Review API",
         bgHoverColor: "bg-customPurple-700",
-        headingHoverColor: "bg-customPurple-500"
+        headingHoverColor: "bg-customPurple-500",
+        link:"/TravellingDiary"
     },
     {
         imageSrc: "/images/travelling diary logo.png",
         altText: "Travelling Diary",
         text: "Travelling Diary",
         bgHoverColor: "bg-customBlue-600",
-        headingHoverColor: "bg-customBlue-400"
+        headingHoverColor: "bg-customBlue-400",
+        link:"/TravellingDiary"
     }
 ];
 
@@ -43,6 +46,8 @@ const Projects: React.FC = () => {
                         text={project.text}
                         bgHoverColor={project.bgHoverColor}
                         headingHoverColor={project.headingHoverColor}
+                        link={project.link}
+                        className="w-96"
                     />
                 ))}
             </section>

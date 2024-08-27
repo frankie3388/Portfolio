@@ -18,13 +18,11 @@ const BlogCard: React.FC<BlogCardProps> = ({
     altText, 
     text,
     headingText,
-    width = 385,
-    height = 385,
     className
 }) => {
     return (
         <section className={`bg-grey rounded-xl flex flex-col justify-center items-center p-10 ${className}`}>
-            <div className="relative w-full h-[300px] aspect-auto">
+            <div className="relative w-full h-[300px] aspect-auto rounded-xl">
                 <Image 
                     src={imageSrc}
                     alt={altText}
