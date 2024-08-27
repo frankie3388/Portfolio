@@ -77,7 +77,7 @@ export default function TravellingDiary() {
               We wanted a light-coloured themed interface for the application that was easy to use. 
               Based on this criteria, we chose to use the colours white, black and two different shades of orange.`
             }
-            className={'relative top-0 left-0 lg:top-10'}
+            className={'relative xl:top-10'}
           />
           <BlogCard 
             imageSrc={'/images/login-screen.png'}
@@ -105,7 +105,7 @@ export default function TravellingDiary() {
                 <li>React Bootstrap</li>
               </ul>
             }
-            className={'relative top-0 left-0 lg:top-10'}
+            className={'relative top-0 left-0 xl:top-10'}
           />
         </section>
     </main>
