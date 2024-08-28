@@ -29,6 +29,7 @@ const PersonalLifePanel: React.FC = () => {
                         src="/images/gaming.jpg" // Replace with your image path
                         alt="Gaming"
                         fill={true}
+                        sizes="(max-width: 768px) 100vw"
                         className="rounded-lg shadow-lg transform rotate-[6deg] object-cover"
                     />
                 </div>

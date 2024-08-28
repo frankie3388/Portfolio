@@ -30,12 +30,14 @@ const AboutMeCard: React.FC<AboutMeCardProps> = ({
                     src={imageSrc}
                     alt={altText}
                     fill={true}
+                    sizes="(max-width: 768px) 100vw"
                     className="rounded-lg object-cover transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0"
                 />
                 <Image
                     src={hoverImageSrc} // Image that appears on hover
                     alt={altText}
                     fill={true}
+                    sizes="(max-width: 768px) 100vw"
                     className="rounded-lg object-cover transition-opacity duration-300 ease-in-out absolute  opacity-0 group-hover:opacity-100"
                 />
             </div>

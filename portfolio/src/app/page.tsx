@@ -21,6 +21,7 @@ export default function Home() {
             src="/images/self-pic2.jpg"
             alt="picture of me"
             fill={true}
+            sizes="(max-width: 768px) 100vw"
             className="opacity-40 object-cover"
           />
         </div>

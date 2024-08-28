@@ -11,7 +11,7 @@ const projectsData = [
         text: "Travelling Diary",
         bgHoverColor: "bg-customGreen-800",
         headingHoverColor: "bg-customGreen-600",
-        link:"/TravellingDiary"
+        link:"/travellingdiary"
     },
     {
         imageSrc: "/images/food-pic.jpg",
@@ -19,7 +19,7 @@ const projectsData = [
         text: "Food Review API",
         bgHoverColor: "bg-customPurple-700",
         headingHoverColor: "bg-customPurple-500",
-        link:"/TravellingDiary"
+        link:"/foodapi"
     },
     {
         imageSrc: "/images/travelling diary logo.png",

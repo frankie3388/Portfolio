@@ -27,6 +27,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
                     src={imageSrc}
                     alt={altText}
                     fill={true} // Ensures the image fills the container
+                    sizes="(max-width: 768px) 100vw"
                     className="rounded-xl object-cover"
                 />
             </div>
