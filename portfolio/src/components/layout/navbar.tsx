@@ -35,37 +35,22 @@ const Navbar = () => {
             >
                 <nav className="flex-1">
                     <ul>
-                        
-                        <li>
-                            <Link href="/">
-                                <NavbarItem icon={<FaHome />} onClick={() => handleLinkClick('#home')}>
-                                    Home
-                                </NavbarItem>
-                            </Link>
-                        </li>
+                        <Link href="/">
+                            <NavbarItem icon={<FaHome />} onClick={() => handleLinkClick('#home')}>
+                                Home
+                            </NavbarItem>
+                        </Link>
                         {currentPath === '/' ? (
                             <>
-                                <li>
-                                    <Link href="/#about">
-                                        <NavbarItem icon={<ImProfile />} onClick={() => handleLinkClick('#about')}>
-                                            About Me
-                                        </NavbarItem>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#projects">
-                                        <NavbarItem icon={<FaBriefcase />} onClick={() => handleLinkClick('#projects')}>
-                                            Projects
-                                        </NavbarItem>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#contact">
-                                        <NavbarItem icon={<MdOutlineEmail />} onClick={() => handleLinkClick('#contact')}>
-                                            Contact
-                                        </NavbarItem>
-                                    </Link>
-                                </li>
+                                <NavbarItem icon={<ImProfile />} onClick={() => handleLinkClick('#about')}>
+                                    About Me
+                                </NavbarItem>
+                                <NavbarItem icon={<FaBriefcase />} onClick={() => handleLinkClick('#projects')}>
+                                    Projects
+                                </NavbarItem>
+                                <NavbarItem icon={<MdOutlineEmail />} onClick={() => handleLinkClick('#contact')}>
+                                    Contact
+                                </NavbarItem>
                             </>
                         ) : null}
                     </ul>

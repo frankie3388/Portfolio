@@ -23,8 +23,6 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
     text,
     bgHoverColor,
     headingHoverColor,
-    width = 385,
-    height = 385,
     className = "",
     link,
 }) => {
@@ -45,6 +43,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
                             src={imageSrc}
                             alt={altText}
                             fill={true}
+                            sizes="(max-width: 768px) 100vw"
                             className={`rounded-lg opacity-10 object-cover ${isHovered ? 'transform scale-105 opacity-100' : ''} transition-all duration-700 shadow-2xl`}
                         />
                     </div>
