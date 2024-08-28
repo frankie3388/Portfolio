@@ -23,6 +23,7 @@ export default function Home() {
             fill={true}
             sizes="(max-width: 768px) 100vw"
             className="opacity-40 object-cover"
+            priority={true}
           />
         </div>
         {/* Intro text container */}
