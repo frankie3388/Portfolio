@@ -22,12 +22,12 @@ const projectsData = [
         link:"/foodapi"
     },
     {
-        imageSrc: "/images/travelling diary logo.png",
-        altText: "Travelling Diary",
-        text: "Travelling Diary",
+        imageSrc: "/images/quote.jpg",
+        altText: "Image of a quote",
+        text: "Quote Game App",
         bgHoverColor: "bg-customBlue-600",
         headingHoverColor: "bg-customBlue-400",
-        link:"/TravellingDiary"
+        link:"/quotegame"
     }
 ];
 

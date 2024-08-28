@@ -9,8 +9,9 @@ interface ButtonProps {
     appearance?: Appearance;
     disabled?: boolean;
     onClick: () => void;
-    className?: 'string';
+    className?: string;
     children: React.ReactNode;
+    type: "button" | "submit" | "reset";
 }
 
 const disabledColors: Record<Appearance, string> = {
@@ -39,6 +40,7 @@ const Button: React.FC<ButtonProps> = ({
     onClick,
     className = '',
     children,
+    type,
 }) => {
     const baseStyle = `px-4 py-2 rounded transition-all duration-300 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2`;
     const variantStyle = disabled ? disabledColors[appearance] : variantColors[variant][appearance];
@@ -48,6 +50,7 @@ const Button: React.FC<ButtonProps> = ({
             onClick={onClick}
             className={`${baseStyle} ${variantStyle} ${className}`}
             disabled={disabled}
+            type={type}
         >
             {children}
         </button>

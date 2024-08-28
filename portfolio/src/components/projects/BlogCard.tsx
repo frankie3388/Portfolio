@@ -33,9 +33,9 @@ const BlogCard: React.FC<BlogCardProps> = ({
             </div>
             <div>
                 <Heading size={"h5"} children={headingText} />
-                <p>
+                <div>
                     {text}
-                </p>
+                </div>
             </div>
         </section>
     )
