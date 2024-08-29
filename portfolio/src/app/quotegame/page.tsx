@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function QuoteGame() {
     return(
         <main className="flex flex-col items-center">
-            <Heading size={"h2"} children={'Quote Game Application'}/>
+            <Heading size={"h2"}>Quote Game Application</Heading>
             <div className="relative flex items-center justify-center w-5/6 h-[600px] p-5 sm:p-20 bg-white rounded-xl">
                 <Image 
                   src={"/images/quote.jpg"} 
@@ -45,7 +45,7 @@ export default function QuoteGame() {
                     </ul>
                 </div>
                 <div className="px-10 pt-10">
-                    <Heading size={"h5"} children={'Overview'} className="p-1 pb-5" />
+                    <Heading size={"h5"} className="p-1 pb-5">Overview</Heading>
                     <p>
                         This is a quote game application. The home page displays a 
                         random quote upon loading. You can search for a quote by a 
@@ -53,8 +53,8 @@ export default function QuoteGame() {
                         On the Game Page of the application, a random quote is displayed 
                         with a missing word. You are to enter in the missing word. 
                         You can also, generate a new quote by clicking on the 
-                        "Generate new quote" button. This is still a work in progress. 
-                        Haven't finished the styling of the application. 
+                        &quot;Generate new quote&quot; button. This is still a work in progress. 
+                        Haven&apos;t finished the styling of the application. 
                         The purpose of building this application was to familiarise myself with React concepts.
                     </p>
                 </div>
