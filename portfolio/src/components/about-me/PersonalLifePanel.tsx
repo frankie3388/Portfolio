@@ -11,17 +11,17 @@ const PersonalLifePanel: React.FC = () => {
 
     return(
         <section id="personal-life" className="shadow-xl shadow-primary-400 rounded-xl lg:mx-20 bg-primary-400 pb-20 md:px-10 mb-10">
-            <Heading size={"h3"} children={'Personal Life'} />
+            <Heading size={"h3"}>Personal Life</Heading>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-20 mt-8 px-8">
                 <div className="bg-white p-6 rounded-lg shadow-lg transform rotate-[-6deg] col-span-2">
-                    <Heading size={"h5"} children={'My background'} className="text-black pt-2"/>
+                    <Heading size={"h5"} className="text-black pt-2">My background</Heading>
                     <p className="text-black">
-                        Hello, my name is Francis (aka. Frankie). I'm an Australian-born
+                        Hello, my name is Francis (aka. Frankie). I&apos;m an Australian-born
                         Chinese, currently living in Brisbane, Queensland. With a
-                        background in Food Technology, I've discovered a profound passion
+                        background in Food Technology, I&apos;ve discovered a profound passion
                         for creating websites and applications. My journey into web
-                        development is not just a learning experience; it's a transformative
-                        career change I'm eagerly pursuing.
+                        development is not just a learning experience; it&apos;s a transformative
+                        career change I&apos;m eagerly pursuing.
                     </p>
                 </div>
                 <div className="relative flex items-center justify-center hidden lg:flex">
@@ -36,7 +36,7 @@ const PersonalLifePanel: React.FC = () => {
                 <div className="space-y-8 col-span-2">
                     {/* Other Passions / Hobbies */}
                     <div className="bg-white p-6 rounded-lg shadow-lg transform rotate-[3deg] text-black">
-                    <Heading size={"h5"} children={'Other Passions / Hobbies'} className="pt-2"/>
+                    <Heading size={"h5"} className="pt-2">Other Passions / Hobbies</Heading>
                         <ul className="list-disc list-inside">
                         <li>Salsa Dancing</li>
                         <li>Video Gaming</li>
@@ -46,7 +46,7 @@ const PersonalLifePanel: React.FC = () => {
                     </div>
                     {/* Education */}
                     <div className="bg-white p-6 rounded-lg shadow-lg transform rotate-[-3deg] text-black">
-                    <Heading size={"h5"} children={'Education'} className="pt-2"/>
+                    <Heading size={"h5"} className="pt-2">Education</Heading>
                         <ul className="list-disc list-inside">
                             <li>Bachelor of Food Technology - 2007</li>
                             <li>Diploma of IT (Web Development) - 2023</li>

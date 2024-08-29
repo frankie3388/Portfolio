@@ -42,10 +42,11 @@ const ContactMeForm: React.FC = () => {
                     <Button
                         variant='primary'
                         appearance='filled'
-                        onClick={() => { console.log('button clicked'); } }
-                        children={'Send Message'} 
+                        onClick={() => { console.log('button clicked'); } } 
                         type={"submit"}                    
-                        />
+                    >
+                        Send Message
+                    </Button>
                 </div>
             </form>
 

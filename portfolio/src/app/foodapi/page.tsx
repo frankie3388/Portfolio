@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function FoodApi() {
     return(
         <main className="flex flex-col items-center">
-            <Heading size={"h2"} children={'Foodie API'}/>
+            <Heading size={"h2"}>Foodie API</Heading>
             <div className="relative flex items-center justify-center w-5/6 h-[600px] p-5 sm:p-20 bg-white rounded-xl">
                 <Image 
                   src={"/images/food-pic.jpg"} 
@@ -35,7 +35,7 @@ export default function FoodApi() {
                     </ul>
                 </div>
                 <div className="px-10 pt-10">
-                    <Heading size={"h5"} children={'Overview'} className="p-1 pb-5" />
+                    <Heading size={"h5"} className="p-1 pb-5">Overview</Heading>
                     <p>
                         The purpose of this application is to provide a platform for users
                         to find information about a restaurant such as food reviews from 

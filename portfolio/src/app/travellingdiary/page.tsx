@@ -9,7 +9,7 @@ export default function TravellingDiary() {
 
   return (
     <main className="flex flex-col items-center">
-        <Heading size={"h2"} children={'Travelling Diary'}/>
+        <Heading size={"h2"}>Travelling Diary</Heading>
         <div className="flex items-center justify-center w-5/6 h-1/2 p-5 sm:p-20 bg-white rounded-xl">
           <Image 
             src={"/images/travelling diary logo.png"} 
@@ -40,7 +40,7 @@ export default function TravellingDiary() {
               </ul>
           </div>
           <div className="px-10 pt-10">
-            <Heading size={"h5"} children={'Overview'} className="p-1 pb-5" />
+            <Heading size={"h5"} className="p-1 pb-5">Overview</Heading>
             <p>
               The purpose of this application is to allow users to log and share their experiences from their travels. 
               As well as to allow clients to login and manage the content of the posts. This application is made for people looking 
