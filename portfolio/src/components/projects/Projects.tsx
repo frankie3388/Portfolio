@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
                         bgHoverColor={project.bgHoverColor}
                         headingHoverColor={project.headingHoverColor}
                         link={project.link}
-                        className="w-96"
+                        className="sm:w-96 w-80"
                     />
                 ))}
             </section>

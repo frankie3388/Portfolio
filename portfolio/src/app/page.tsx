@@ -6,12 +6,15 @@ import Projects from "@/components/projects/Projects";
 import ContactMe from "@/components/contact/ContactMe";
 import { useEffect, useState } from "react";
 import { useOffsetY } from "@/hooks/useOffsetY";
+import ResumeLink from "@/components/home/ResumeLink";
+
 
 export default function Home() {
   const offsetY = useOffsetY();
 
   return (
     <main>
+      <ResumeLink className="hover:text-primary-500"/>
       <section id="home" className="relative flex min-h-screen flex-col items-center justify-center border-b-8 border-white" style={{ transform: `translateY(-${offsetY * 0.1}px)` }}>
         {/* Background Image Container */}
         <div 
