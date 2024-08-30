@@ -4,7 +4,6 @@ import Image from "next/image";
 import AboutMe from "@/components/about-me/AboutMe";
 import Projects from "@/components/projects/Projects";
 import ContactMe from "@/components/contact/ContactMe";
-import { useEffect, useState } from "react";
 import { useOffsetY } from "@/hooks/useOffsetY";
 import ResumeLink from "@/components/home/ResumeLink";
 import { calculateOpacity } from "@/utils/helperFunctions";
