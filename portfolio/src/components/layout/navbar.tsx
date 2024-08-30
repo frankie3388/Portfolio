@@ -29,7 +29,7 @@ const Navbar = () => {
                     </div> 
             {/* Full Navbar for medium screens and above */}
             <div
-                className={`h-1/2 ${isHovered ? 'w-40' : 'w-20'} bg-transparent text-white flex flex-col fixed transition-all duration-300 z-10 hidden sm:flex hover:cursor-pointer`}
+                className={`h-1/2 ${isHovered ? 'w-40 text-primary-500' : 'w-20'} bg-transparent text-white flex flex-col fixed transition-all duration-300 z-10 hidden sm:flex hover:cursor-pointer`}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >

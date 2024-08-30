@@ -6,7 +6,6 @@ import BlogCard from "@/components/projects/BlogCard";
 
 export default function TravellingDiary() {
 
-
   return (
     <main className="flex flex-col items-center">
         <Heading size={"h2"}>Travelling Diary</Heading>
@@ -35,6 +34,16 @@ export default function TravellingDiary() {
                     className="underline text-primary-300 hover:text-white"
                   >
                     Link to website - Travelling Diary
+                  </a>
+                </li>
+                <li className="pt-5">
+                  <a 
+                    href="https://github.com/frankie3388/t3-finalproject-frontend?tab=readme-ov-file" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="underline text-primary-300 hover:text-white"
+                  >
+                    Link to Github Repo - Travelling Diary
                   </a>
                 </li>
               </ul>

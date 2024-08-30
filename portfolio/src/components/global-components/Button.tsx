@@ -27,7 +27,7 @@ const variantColors: Record<ButtonVariants, Record<Appearance, string>> = {
         ghost: `bg-transparent hover:bg-customBlue-200`,
     },
     primary: {
-        filled: `border text-white border-white bg-customPurple-700 hover:bg-customPurple-900 hover:border-black hover:drop-shadow-xl`,
+        filled: `border text-white border-white bg-primary-500 hover:bg-primary-600 hover:border-black hover:drop-shadow-xl`,
         outline: `border text-white border-white bg-transparent hover:bg-customPurple-600`,
         ghost: `bg-gray-400 opacity-60 hover:bg-customPurple-200`,
     }

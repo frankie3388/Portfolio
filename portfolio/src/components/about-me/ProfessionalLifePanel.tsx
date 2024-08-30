@@ -12,6 +12,7 @@ import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { handleLinkClick } from "@/utils/helperFunctions";
+import ResumeLink from "../home/ResumeLink";
 
 const ProfessionalLifePanel: React.FC = () => {
     useEffect(() => {
@@ -22,7 +23,7 @@ const ProfessionalLifePanel: React.FC = () => {
         <section id="professional-life" className="shadow-xl shadow-customPink-500 rounded-xl lg:mx-20 bg-customPink-500 pb-20 md:px-10 mb-10">
             <Heading size={"h3"}>Professional Life</Heading>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-20 mt-8 px-8">
-                <div className="bg-white p-6 rounded-lg shadow-lg lg:col-span-2 col-span-3">
+                <div className="bg-white p-6 rounded-lg shadow-lg lg:col-span-2 col-span-3 flex flex-col gap-5">
                     <Heading size={"h5"} className="text-black pt-2">My background</Heading>
                     <p className="text-black">
                         I have 10 years of experience in the Food Manufacturing Industry, specifically in Quality Assurance.
@@ -30,6 +31,7 @@ const ProfessionalLifePanel: React.FC = () => {
                         journey in the world of web development, where I aspire to create meaningful and user-friendly 
                         digital experiences.  
                     </p>
+                    <ResumeLink className="text-primary-500 relative justify-end hover:text-black"/>
                 </div>
                 <div className="space-y-8 col-span-3">
                     {/* Other Passions / Hobbies */}
