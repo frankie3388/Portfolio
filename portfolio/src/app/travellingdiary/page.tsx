@@ -3,8 +3,10 @@ import React from "react";
 import Heading from "@/components/global-components/heading";
 import Image from "next/image";
 import BlogCard from "@/components/projects/BlogCard";
+import { useOffsetY } from "@/hooks/useOffsetY";
 
 export default function TravellingDiary() {
+  const offsetY = useOffsetY();
 
   return (
     <main className="flex flex-col items-center">
@@ -17,8 +19,8 @@ export default function TravellingDiary() {
             height={300}
           />
         </div>
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 md:px-8">
-          <div className="px-10 pt-10 flex justify-center">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 md:px-8 z-20" style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+          <div className="px-10 pt-10 flex justify-center bg-gray-600 bg-opacity-70 rounded-xl pb-10">
               <ul className="list-disc text-xl">
                 <li className="pt-5">
                   Coder Academy Final Project
@@ -48,7 +50,7 @@ export default function TravellingDiary() {
                 </li>
               </ul>
           </div>
-          <div className="px-10 pt-10">
+          <div className="px-10 pt-10 bg-gray-600 bg-opacity-70 rounded-xl pb-10">
             <Heading size={"h5"} className="p-1 pb-5">Overview</Heading>
             <p>
               The purpose of this application is to allow users to log and share their experiences from their travels. 
