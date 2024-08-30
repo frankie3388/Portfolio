@@ -7,7 +7,7 @@ import ContactMe from "@/components/contact/ContactMe";
 import { useEffect, useState } from "react";
 import { useOffsetY } from "@/hooks/useOffsetY";
 import ResumeLink from "@/components/home/ResumeLink";
-
+import { calculateOpacity } from "@/utils/helperFunctions";
 
 export default function Home() {
   const offsetY = useOffsetY();
@@ -15,7 +15,11 @@ export default function Home() {
   return (
     <main>
       <ResumeLink className="hover:text-primary-500"/>
-      <section id="home" className="relative flex min-h-screen flex-col items-center justify-center border-b-8 border-white" style={{ transform: `translateY(-${offsetY * 0.1}px)` }}>
+      <section 
+        id="home" 
+        className="relative flex min-h-screen flex-col items-center justify-center border-b-8 border-white" 
+        style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+      >
         {/* Background Image Container */}
         <div 
           className="absolute z-0 inset-x-0 top-1/2 transform -translate-y-1/2 mx-auto w-full max-w-[1000px] h-full sm:h-[100%] md:h-[100%] lg:h-[100%]"
@@ -27,6 +31,10 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw"
             className="opacity-40 object-cover"
             priority={true}
+            style={{
+              opacity: calculateOpacity(offsetY), // Use the imported utility function
+              transition: "opacity 0.5s ease-out",
+            }}
           />
         </div>
         {/* Intro text container */}
