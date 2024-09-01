@@ -19,7 +19,7 @@ export default function TravellingDiary() {
             height={300}
           />
         </div>
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 md:px-8 z-20" style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 md:px-8 z-10">
           <div className="px-10 pt-10 flex justify-center bg-gray-600 bg-opacity-70 rounded-xl pb-10">
               <ul className="list-disc text-xl">
                 <li className="pt-5">
@@ -59,7 +59,7 @@ export default function TravellingDiary() {
             </p>
           </div>
         </section>
-        <section className="relative w-screen h-[300px] md:h-[600px] my-20 bg-white opacity-50">
+        <section className="relative w-screen h-[300px] md:h-[600px] mt-20 mb-48 bg-white opacity-50">
           <Image 
             src={"/images/travelling-diary.png"} 
             alt={"Image of the travelling diary app"} 
@@ -67,7 +67,7 @@ export default function TravellingDiary() {
             className="object-contain"
           />
         </section>
-        <section className="grid grid-cols-1 xl:grid-cols-2 gap-5 p-8 md:mx-20 lg:mx-40">
+        <section className="grid grid-cols-1 xl:grid-cols-2 gap-5 p-8 md:mx-20 lg:mx-40" style={{ transform: `translateY(${-offsetY * 0.2}px)` }}>
           <BlogCard 
             imageSrc={'/images/trelloboard.png'}
             altText={'image of trello board'}
