@@ -6,11 +6,15 @@ import React, { useState } from "react";
 import PersonalLifePanel from "./PersonalLifePanel";
 import ProfessionalLifePanel from "./ProfessionalLifePanel";
 import { handleLinkClick } from "@/utils/helperFunctions";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const AboutMe: React.FC = () => {
     const [showPersonalLife, setShowPersonalLife] = useState(false);
     const [showProfessionalLife, setShowProfessionalLife] = useState(false);
     const offsetY = useOffsetY();
+
+    const cardRef1 = useScrollAnimation(); // Use hook for first card
+    const cardRef2 = useScrollAnimation(); // Use hook for second card
 
     const handlePersonalLifeClick = (sectionId: string) => {
         setShowPersonalLife(!showPersonalLife);
@@ -31,6 +35,7 @@ const AboutMe: React.FC = () => {
             <Heading size='h3'>About Me</Heading>
             <section className="flex flex-wrap justify-center gap-10 mb-10">
                 <AboutMeCard 
+                    ref={cardRef1}
                     imageSrc="/images/black-white-salsa3.png"
                     altText="black and white picture of people dancing"
                     text="Personal Life" 
@@ -39,6 +44,7 @@ const AboutMe: React.FC = () => {
                     onClick={() => handlePersonalLifeClick('#personal-life')} // Add onClick handler
                 />
                 <AboutMeCard 
+                    ref={cardRef2}
                     imageSrc="/images/black-white-code1.png"
                     altText="black and white picture of computer screen with code"
                     text="Professional Life" 
