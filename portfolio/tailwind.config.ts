@@ -101,9 +101,14 @@ const config: Config = {
             textShadow: 'none',
           },
         },
+        // slideUp: {
+        //   '0%': { opacity: '0', transform: 'translateY(50px)' },
+        //   '100%': { opacity: '1', transform: 'translateY(0px)' },
+        // },
       },
       animation: {
         flicker: 'flicker 4s linear infinite',
+        // slideUp: 'slideUp 3s ease-in forwards',
       },
     },
   },

@@ -17,7 +17,10 @@ export default function Home() {
       <section 
         id="home" 
         className="relative flex min-h-screen flex-col items-center justify-center border-b-8 border-white" 
-        style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+        style={{ 
+          transform: `translateY(-${offsetY * 0.1}px)`, 
+          borderBottomColor: `rgba(255, 255, 255, ${Math.min(offsetY / 500, 1)})` // Adjust opacity based on scroll
+        }}
       >
         {/* Background Image Container */}
         <div 
