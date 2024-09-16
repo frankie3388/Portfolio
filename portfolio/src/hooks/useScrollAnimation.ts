@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-export const useScrollAnimation = (threshold = 0.6) => {
+export const useScrollAnimation = (threshold = 0.2) => {
   const elementRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
