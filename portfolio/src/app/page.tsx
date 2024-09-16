@@ -13,7 +13,7 @@ import { useDelayedRender } from "@/hooks/useDelayedRender";
 
 export default function Home() {
   const offsetY = useOffsetY();
-  const isLoading = useDelayedRender(1000); // Delay rendering for 3 seconds
+  const isLoading = useDelayedRender(2000); // Delay rendering for 2 seconds
 
   if (isLoading) {
     return <Loading />; // Show Loading component for 2 seconds
